@@ -1,0 +1,40 @@
+.character {
+    margin: 1rem 0.5rem 2rem 0.5rem;
+    padding: 1rem 0.5rem;
+    background-color: #230052;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 12px;
+    text-align: center;
+    color: var(--mytextColor);
+}
+  
+.character h2 {
+    font-size: 1.5rem;
+    color: var(--mysecondary);
+    margin-bottom: 1rem;
+}
+
+.table {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.table td {
+    padding: 0.5rem;
+}
+
+.feature {
+    text-align: left;
+    color: var(--mysecondary1);
+}
+
+@media screen and (min-width: 480px) {
+    .character {
+        margin: 1rem 1rem 2rem 1rem;
+        padding: 1rem;
+    }   
+    
+    .character h2 {
+        font-size: 1.75rem;
+    }
+}

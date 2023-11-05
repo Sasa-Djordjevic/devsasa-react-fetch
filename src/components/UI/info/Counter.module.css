@@ -1,0 +1,12 @@
+.counter {
+    text-align: center;
+    color: var(--mysecondary1);
+    margin: 1rem 0;
+    
+}
+
+.counter span {
+    background-color: var(--backgroundColor2);
+    padding: 0.25rem 0.5rem;
+    border-radius: 8px;
+}

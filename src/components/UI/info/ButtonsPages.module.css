@@ -1,0 +1,27 @@
+.container-btn {
+    text-align: center;
+}
+
+.button {
+    font: inherit;
+    cursor: pointer;
+    background-color: var(--myprimary);
+    border: 1px solid var(--myprimary);
+    width: 140px;
+    margin: 0 0.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 20px;
+    color: var(--mytextColor);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:focus {
+    outline: none;
+}
+  
+.button:hover,
+.button:active {
+    background-color: var(--myprimary1);
+    border-color: var(--myprimary1);
+}
+  

@@ -1,0 +1,20 @@
+.section {
+    margin: 0 auto 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+    text-align: center;
+    background-color: var(--backgroundColor2);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.h1 {
+    font-size: 1.75rem;
+    color: var(--mysecondary);
+}
+
+@media screen and (min-width: 480px) {
+    .h1 {
+        font-size: 2rem;
+    }
+}

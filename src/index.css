@@ -1,0 +1,172 @@
+/* ============= GLOBAL CSS =============== */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* colors */
+  --primary-100: #d0f4fe; /* -70% */
+  --primary-200: #b0edfd; /* -50% */
+  --primary-300: #90e5fc; /* -30% */
+  --primary-400: #71defb; /* -10% */
+  --primary-500: #61dafb; /* react color */
+  --primary-600: #57c4e2; /* +10% */
+  --primary-700: #4499b0; /* +30% */
+  --primary-800: #316d7e; /* +50% */
+  --primary-900: #275764; /* +60% */
+
+  --primary2-500: #10b981;
+
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+
+
+  /* my color scheme vars */
+  --backgroundColor1: #272727;
+  --backgroundColor1-light: rgba(37,37,37, 0.95);
+  --backgroundColor2: #323232;
+  --myprimary: #230052;
+  --myprimary1: #460897;
+  --mysecondary: #f7e702; 
+  --mysecondary1:#eccf77;
+  --mysecondary20: #c29285; /* +2-% */
+  --myaccent: #10a7d1;
+  --mytextColor: #f4f1f1;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background-color: var(--backgroundColor1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--mytextColor);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* buttons */
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  display: inline-block;
+  transition: 0.3s ease-in-out all;
+}
+
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* loader */
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--myprimary);
+  animation: spinner 0.6s linear infinite;
+  margin: 2rem auto 0 auto;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+/* ============= PROJECTS CSS =============== */
+main {
+  min-height: 95vh;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  background-image: url("/public/pattern.png");
+  background-repeat: repeat;
+  background-repeat: repeat;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.message-text {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    padding-top: 3rem;
+  }
+}
